@@ -1,3 +1,4 @@
+using System;
 using System.Numerics;
 
 namespace ConsoleApp1
@@ -33,7 +34,7 @@ namespace ConsoleApp1
         public static bool operator <(BigInt b1, BigInt b2) => b1.Value < b2.Value;
         public static bool operator >=(BigInt b1, BigInt b2) => b1.Value >= b2.Value;
         public static bool operator <=(BigInt b1, BigInt b2) => b1.Value <= b2.Value;
-        public static bool operator ==(BigInt b1, BigInt b2) => b1 != null && b2 != null && b1.Value == b2.Value;
-        public static bool operator !=(BigInt b1, BigInt b2) => b1 != null && b2 != null && b1.Value != b2.Value;
+        public static bool operator ==(BigInt b1, BigInt b2) => (object)b1 != null && (object)b2 != null && b1.Value == b2.Value;
+        public static bool operator !=(BigInt b1, BigInt b2) => !(b1 == b2);
     }
 }

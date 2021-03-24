@@ -46,7 +46,7 @@ namespace ConsoleApp1
                 .Select(g => g.SkipWhile(v => v.Value == 0))
                 .Select(v => v.Select(b => b.Value).ToArray())
                 .Select(b => BigInteger.ModPow(new BigInteger(b), d.Value, n.Value))
-                .Select(n => byte.Parse(n.ToString())).ToArray();
+                .Select(num => byte.Parse(num.ToString())).ToArray();
 
         public static void CryptFile(string filePathInput, string filePathOutput, BigInt e, BigInt n, Func<byte[], BigInt, BigInt, byte[]> fileAction)
             => File.WriteAllBytes(filePathOutput, fileAction(File.ReadAllBytes(filePathInput), e, n));
