@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+    <BubbleSort>C:\Labs\Lab2\Lab2\text.txt</BubbleSort>
+    <QuickSort>C:\Labs\Lab2\Lab2\text.txt</QuickSort>
+    <TreeSort>C:\Labs\Lab2\Lab2\text.txt</TreeSort>
+    <InsertSort>C:\Labs\Lab2\Lab2\text.txt</InsertSort>
+    <MergeSort>C:\Labs\Lab2\Lab2\text.txt</MergeSort>
+    <HeapSort>C:\Labs\Lab2\Lab2\text.txt</HeapSort>
+    <RadixSort>C:\Labs\Lab2\Lab2\text.txt</RadixSort>
+    <RedBlackTreeSort>C:\Labs\Lab2\Lab2\text.txt</RedBlackTreeSort>
+</Paths>
